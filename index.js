@@ -2,7 +2,7 @@
 const n1 = 10;
 const n2 = 15;
 const n3 = 20;
-const n4 = 6;
+const n4 = 5;
 
 // Check one: add up to 50
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
@@ -17,15 +17,16 @@ const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4;
 
 // Combine variables
-const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
+const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;   /* would take out the ! and it's good after changing the isOver25 const, which should
+                                                                ideally be a 'let' so I can reassign the variable to the const value declared below.
+
+                                                                const changeIsOver25Const = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25; */
 
 
 
 
 //                                                              START MY CODE HERE
-
 //                                              PART 1
-// check divisible by 5
 const isDivisibleBy5 = ((n1 + n2 + n3 + n4) % 5) == 0;
 
 const isFirstLargerThanLast = n1 > n4;
@@ -39,7 +40,6 @@ const b = a * n3;
 // result / n4 remainder
 const c = b % n4;                                               /* okay well TECHNICALLY*/
 
-const changeIsUnder25Const = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
 
 //                              log results
 /* console.log(isDivisibleBy5)
@@ -47,7 +47,7 @@ console.log(isFirstLargerThanLast)
 console.log(a)
 console.log(b)
 console.log(c)
-console.log(changeIsUnder25Const) */
+console.log(changeIsOver25Const) */
 
 
 
@@ -63,7 +63,7 @@ const avgCostPerGal = 3;
 //                              calc for 55mph
 // gallons of fuel?
 const checkQtyGal55 = tripDistance / mpg55Mph;
-// budget cover?
+// budget covers cost?
 const budgetCover55 = (budget - (checkQtyGal55 * avgCostPerGal)) >= 0;
 // trip time?
 const tripTimeInHours55 = (tripDistance / 55);
@@ -77,7 +77,7 @@ console.log(tripTimeInHours55) */
 //                              calc for 60mph
 // gallons of fuel?
 const checkQtyGal60 = tripDistance / mpg60Mph;
-// budget cover?
+// budget covers cost?
 const budgetCover60 = (budget - (checkQtyGal60 * avgCostPerGal)) >= 0;
 // trip time?
 const tripTimeInHours60 = (tripDistance / 60);
@@ -91,7 +91,7 @@ console.log(tripTimeInHours60) */
 //                              calc for 75mph
 // gallons of fuel?
 const checkQtyGal75 = tripDistance / mpg75Mph;
-// budget cover?
+// budget covers cost?
 const budgetCover75 = (budget - (checkQtyGal75 * avgCostPerGal)) >= 0;
 // trip time?
 const tripTimeInHours75 = (tripDistance / 75);
