@@ -103,7 +103,7 @@ console.log(budgetCover75)
 console.log(tripTimeInHours75) */
 
 //                              Final result: I'm staying in bed.
-const finalAnswer = `The best value for my time is to go 60mph. I'll need ${Math.round(checkQtyGal60)} gallons of gas, leaving me \$${Math.floor(budget - (checkQtyGal60 * avgCostPerGal))}
-leftover, saving me around ${Math.floor((tripDistance / 55) - (tripDistance / 60))} hours over going 55mph for a price differential of around
+const finalAnswer = `The best value for my time is to go 60mph. I'll need ${Math.round(checkQtyGal60)} gallons of gas, leaving me \$${Math.round(budget - (checkQtyGal60 * avgCostPerGal))}
+leftover, saving me around ${Math.round((tripDistance / 55) - (tripDistance / 60))} hours over going 55mph for a price differential of around
 \$${Math.round((budget - (checkQtyGal55 * avgCostPerGal)) - (budget - (checkQtyGal60 * avgCostPerGal)))}`;
 console.log(finalAnswer)
