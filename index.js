@@ -2,7 +2,7 @@
 const n1 = 10;
 const n2 = 15;
 const n3 = 20;
-const n4 = 5;
+const n4 = 6;
 
 // Check one: add up to 50
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
@@ -19,7 +19,6 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 // Combine variables
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
-// Finally, log the results.
 
 
 
@@ -38,7 +37,7 @@ const a = n2 - n1;
 const b = a * n3;
 
 // result / n4 remainder
-const c = b % n4;
+const c = b % n4;                                               /* okay well TECHNICALLY*/
 
 const changeIsUnder25Const = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
 
@@ -49,6 +48,7 @@ console.log(a)
 console.log(b)
 console.log(c)
 console.log(changeIsUnder25Const) */
+
 
 
 
@@ -74,7 +74,6 @@ console.log(budgetCover55)
 console.log(tripTimeInHours55) */
 
 
-
 //                              calc for 60mph
 // gallons of fuel?
 const checkQtyGal60 = tripDistance / mpg60Mph;
@@ -88,6 +87,7 @@ const tripTimeInHours60 = (tripDistance / 60);
 console.log(budgetCover60)
 console.log(tripTimeInHours60) */
 
+
 //                              calc for 75mph
 // gallons of fuel?
 const checkQtyGal75 = tripDistance / mpg75Mph;
@@ -100,3 +100,8 @@ const tripTimeInHours75 = (tripDistance / 75);
 /* console.log(checkQtyGal75)
 console.log(budgetCover75)
 console.log(tripTimeInHours75) */
+
+//                              Final result: I'm staying in bed.
+const finalAnswer = `The best value for my time is to go 60MPH. I'll need ${Math.round(checkQtyGal60)} gallons of gas, leaving me \$${Math.floor(budget - (checkQtyGal60 * avgCostPerGal))}
+leftover, saving me around ${Math.floor((tripDistance / 55) - (tripDistance / 60))} hours over going 55mph for a price differential of around $10`
+console.log(finalAnswer)
