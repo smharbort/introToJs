@@ -38,7 +38,7 @@ const a = n2 - n1;
 const b = a * n3;
 
 // result / n4 remainder
-const c = b % n4;                                               /* okay well TECHNICALLY*/
+const c = b % n4;                                               // okay well TECHNICALLY
 
 
 //                              log results
@@ -59,6 +59,7 @@ const mpg60Mph = 28;
 const mpg75Mph = 23;
 const budget = 175;
 const avgCostPerGal = 3;
+
 
 //                              calc for 55mph
 // gallons of fuel?
@@ -103,5 +104,5 @@ console.log(tripTimeInHours75) */
 
 //                              Final result: I'm staying in bed.
 const finalAnswer = `The best value for my time is to go 60MPH. I'll need ${Math.round(checkQtyGal60)} gallons of gas, leaving me \$${Math.floor(budget - (checkQtyGal60 * avgCostPerGal))}
-leftover, saving me around ${Math.floor((tripDistance / 55) - (tripDistance / 60))} hours over going 55mph for a price differential of around $10`
-console.log(finalAnswer)
+leftover, saving me around ${Math.floor((tripDistance / 55) - (tripDistance / 60))} hours over going 55mph for a price differential of around $10`;
+console.log(finalAnswer);
